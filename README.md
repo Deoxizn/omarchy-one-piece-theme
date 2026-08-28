@@ -47,3 +47,21 @@ For the waybar, you can install this theme by copying the config.jsonc file and 
 &nbsp;   
 ```cp -r ~/.config/omarchy/themes/one-piece/gtk-3.0 ~/.config/```  
 ```cp -r ~/.config/omarchy/themes/one-piece/gtk-4.0 ~/.config/```
+&nbsp;    
+&nbsp;  
+&nbsp;    
+&nbsp;      
+# Dark Mode Variant  
+&nbsp;  
+&nbsp;
+Prefer a darker version of this theme? The `dark/` folder swaps the light background (`#fefefe`) and dark-brown text for a dark background (`#1a120c`) and warm cream text (`#f4e8d8`), keeping every red/gold/blue accent color exactly the same. It covers the terminal palette, GTK3/GTK4, Waybar, wofi, walker, hyprlock, SwayOSD, Vesktop, and Spicetify.
+&nbsp;  
+&nbsp;
+Install the theme normally, then overlay the dark files on top and re-apply:
+&nbsp;  
+```omarchy-theme-install https://github.com/Deoxizn/omarchy-one-piece-theme.git```  
+```cp -r dark/* ~/.config/omarchy/themes/one-piece/```  
+```omarchy theme set one-piece```
+&nbsp;  
+&nbsp;
+This also flips the system-wide dark/light detection Omarchy derives from `colors.toml`, so GTK apps and Chromium-based browsers correctly pick up dark mode too.
